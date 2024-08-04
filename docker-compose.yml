@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  adminer:
+    image: adminer
+    container_name: web
+    restart: always
+    ports:
+      - "80:8080"

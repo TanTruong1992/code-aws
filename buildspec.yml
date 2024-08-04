@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "1. pre build step"
+  build:
+    commands:
+      - echo "2. Build step"
+  post_build:
+    commands:
+      - echo 3. "Post build"
+
+artifacts:
+  files:
+    - codedeploy/**/*
+    - appspec.yml
+    - docker-compose.yml
+    - .env
